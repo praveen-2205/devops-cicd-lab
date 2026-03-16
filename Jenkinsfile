@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/praveen-2205/myapp-cicd.git'
+                git branch: 'main', url: 'https://github.com/praveen-2205/devops-cicd-lab.git'
             }
         }
 
@@ -34,17 +34,3 @@ pipeline {
         }
     }
 }
-```
-
-> ✏️ Replace `YOUR_GITHUB_USERNAME` with your actual GitHub username
-
----
-
-## Where to Save It
-
-Your folder structure should look like this:
-```
-myapp/
-├── index.html
-├── Dockerfile
-└── Jenkinsfile        ← save here (no .txt, no extension)
