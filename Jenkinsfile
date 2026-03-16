@@ -5,13 +5,13 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'YOUR_GITHUB_REPO_LINK'
+                git 'https://github.com/praveen-2205/devops-cicd-lab'
             }
         }
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t praveen/2023bcs0115_23bcs0115 .'
+                sh 'docker build -t praveen/2023bcs0115 .'
             }
         }
 
@@ -25,7 +25,7 @@ pipeline {
 
         stage('Push Image') {
             steps {
-                sh 'docker push praveen/2023bcs0115_23bcs0115'
+                sh 'docker push praveen/2023bcs0115'
             }
         }
 
